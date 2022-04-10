@@ -20,12 +20,14 @@
 }
 
 .main {
+  
   padding-left: 40px;
+  margin-bottom: 50px;
 }
 
 img { 
-  margin: 0;
-  height: 300px;  
+  margin-top: 35px;
+  height: 400px;  
 }
 
 video {
@@ -38,26 +40,49 @@ video {
     /* opacity: 0.8; */
     z-index: -1;
 }
-
+button {
+  font-size: 1em;
+  font-weight: 800;
+  line-height: 1em; 
+  background-color: black;
+  color: #fff;
+  border-radius: 6px;
+}
+button:hover {
+  cursor: pointer;
+}
 .nasa {
+  
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-start;
+  margin-top: 30px;
+
 }
 
-h2, h1 , h3{
+.textUL {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0; 
+}
+
+h1 , h3{
   text-transform: uppercase;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 4em;
   font-weight: 800;
   line-height: 1em; 
+  
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 1em;
   font-weight: 800;
   line-height: 1em;
  
@@ -66,14 +91,14 @@ h2 {
 h3 {
   font-size: 2em;
   font-weight: 700;
-  line-height: 1em;
+  /* line-height: 1em; */
   
 }
 
 h4 {
   font-size: 1em;
   font-weight: 400 bold;
-  line-height: 1em;
+  /* line-height: 1em; */
   
 }
 

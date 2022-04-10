@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-    	<meta name="description" content="This is where your description goes">
+    	<meta name="description" content="NASA's Picture of the Day">
     	<meta name="keywords" content="one, two, three">
 
 		<title>Nasa Photos</title>
@@ -13,28 +13,31 @@
 	</head>
 	<body>
 		<section class="showcase">
+			
 			<div class="main">
+				<h1>NASA's picture of the day.</h1>
 				<h2 class="selectDate">Select a date after 1995-06-16. <br>
 				To learn about that days, <br>
 				<strong>"NASA's picture of the day."</strong></h2>
-				<input type="text" name="" value="" placeholder="YYYY-MM-DD" id="input">
-				<button type="button" name="button">Get Picture</button>
+				<input type="text" name="" value="" placeholder="YYYY-MM-DD" id="input" onkeypress="getImage()">
+				<button type="button" name="button">Submit Date</button>
+			
+			
+			<div class="nasa">
+				<!-- <ul class="pictureUL">
+					<li></li>			
+				</ul> -->
+				<img src="" alt="">
+				<ul class="textUL">
+					<li><h3 class="name"></h3></li>
+					<li><h4 class="description"></h4></li>
+				</ul>
 			</div>
-			
-			<section class="nasa">
-			<ul class="pictureUL">
-				<li><h1>NASA's picture of the day.</h1></li>
-				<li><img src="" alt=""></li>			
-			</ul>
-			<ul class="textUL">
-				<li><h3 class="name">Name</h3></li>
-				<li><h4 class="description">Description</h4></li>
-			</ul>
-			</section>
-			
+
+			</div>
 		</section>
 
-		<video src="img/background1.mp4" loop autoplay muted></video>
+		<video src="img/background.mp4" loop autoplay muted></video>
 		
 
 		<script type="text/javascript" src="js/main.js"></script>
