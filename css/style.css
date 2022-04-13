@@ -105,6 +105,32 @@ h4 {
 ul li {
   list-style: none;
 }
+
+.social {
+  /* position: absolute; */
+  /* bottom: 10px; */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  color: #fff;
+  margin-right: 20px;
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: scale(2) translateY(-10px);
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
