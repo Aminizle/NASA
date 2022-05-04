@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="NASA's Picture of the Day">
-    	<meta name="keywords" content="one, two, three">
-		<script src="https://kit.fontawesome.com/9fef8847aa.js" crossorigin="anonymous"></script>
-		
 
-		<title>Nasa Photos</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="NASA's Picture of the Day">
+	<meta name="keywords" content="one, two, three">
+	<script src="https://kit.fontawesome.com/9fef8847aa.js" crossorigin="anonymous"></script>
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<section class="showcase">
-			
-			<div class="main">
-				<h1>NASA's picture of the day.</h1>
-				<h2 class="selectDate">Select a date after 1995-06-16. <br>
-				To learn about that days, <br>
-				<strong>"NASA's picture of the day."</strong></h2>
-				<input type="text" name="" value="" placeholder="YYYY-MM-DD" id="input" onkeypress="getImage()">
-				<button type="button" name="button">Submit Date</button>
-			
-			
+
+	<title>Nasa Photos</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<section class="showcase">
+
+		<div class="main">
+
+			<h1>NASA's picture of the day.</h1>
+			<h2 class="selectDate">Select a date after 1995-06-16. <br>
+				To learn about that days,
+				<strong>"NASA's picture of the day."</strong>
+			</h2>
+
+			<input type="text" name="" value="1995-06-16" placeholder="YYYY-MM-DD" id="input" onkeypress="getImage()">
+			<button type="button" name="button">Search Date</button>
 			<div class="nasa">
-				<!-- <ul class="pictureUL">
-					<li></li>			
-				</ul> -->
+
 				<img src="" alt="">
 				<ul class="textUL">
-					<li><h3 class="name"></h3></li>
-					<li><h4 class="description"></h4></li>
+					<li>
+						<h3 class="name"></h3>
+					</li>
+					<li>
+						<h4 class="description"></h4>
+					</li>
 				</ul>
-				
-			</div>
 
 			</div>
-		</section>
-		<ul class="social">
-            <li><a href="https://twitter.com/DevAmeenM" target="blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw" target="blank"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/ameen-mohiyuddin-413bab197/" target="blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
 
-		<video src="img/background.mp4" loop autoplay muted></video>
-		
+		</div>
+	</section>
+	<ul class="social">
+		<li><a href="https://twitter.com/DevAmeenM" target="blank"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw" target="blank"><i
+					class="fab fa-youtube"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/ameen-mohiyuddin-413bab197/" target="blank"><i
+					class="fab fa-linkedin"></i></a></li>
+	</ul>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	
-	</body>
+	<video src="img/background.mp4" loop autoplay muted></video>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
 </html>
