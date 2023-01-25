@@ -1,64 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="NASA's Picture of the Day" />
+    <meta name="keywords" content="one, two, three" />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="description" content="NASA's Picture of the Day">
-	<meta name="keywords" content="one, two, three">
-	<!-- <script src="https://kit.fontawesome.com/9fef8847aa.js" crossorigin="anonymous"></script> -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- <script src="https://kit.fontawesome.com/9fef8847aa.js" crossorigin="anonymous"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
 
+    <!-- favicon & Title -->
+    <title>Nasa Photos</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
 
-	<title>Nasa Photos</title>
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-	<!-- external CSS link -->
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
+  <body>
+    <section class="showcase">
+      <div class="main">
+        <h1>NASA's picture of the day</h1>
+        <h2 class="selectDate">
+          Select a date to explore NASA's picture of the day archive.
+        </h2>
 
-<body>
-	<section class="showcase">
+        <input
+          type="date"
+          name=""
+          value="1995-06-16"
+          placeholder="YYYY-MM-DD"
+          min="1995-06-16"
+          id="input"
+          onkeypress="getImage()"
+        />
+        <button type="button" name="searchButton" id="searchButton">
+          Search Date
+        </button>
+        <button type="button" name="button">First Picture</button>
+        <button type="button" name="button">Latest Picture</button>
+        <button type="button" name="button">Previous Picture</button>
+        <button type="button" name="button">Next Picture</button>
+        <div class="nasa">
+          <img src="" alt="" />
+          <ul class="textUL">
+            <li>
+              <h3 class="name"></h3>
+            </li>
 
-		<div class="main">
+            <li>
+              <h4 class="description"></h4>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <ul class="social">
+      <li>
+        <a href="https://twitter.com/DevAmeenM" target="blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw"
+          target="blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/in/ameen-mohiyuddin-413bab197/"
+          target="blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://ameenmohiyuddin.netlify.app/" target="blank"
+          ><i class="fas fa-circle-user"></i
+        ></a>
+      </li>
+    </ul>
 
-			<h1> NASA's picture of the day</h1>
-			<h2 class="selectDate">Select a date to explore NASA's picture of the day archive.
-			</h2>
+    <video src="img/background.mp4" loop autoplay muted></video>
 
-			<input type="date" name="" value="1995-06-16" placeholder="YYYY-MM-DD" min="1995-06-16" id="input"
-				onkeypress="getImage()">
-			<button type="button" name="button">Search Date</button>
-			<div class="nasa">
-
-				<img src="" alt="">
-				<ul class="textUL">
-					<li>
-						<h3 class="name"></h3>
-					</li>
-					<li>
-						<h4 class="description"></h4>
-					</li>
-				</ul>
-
-			</div>
-
-		</div>
-	</section>
-	<ul class="social">
-		<li><a href="https://twitter.com/DevAmeenM" target="blank"><i class="fab fa-twitter"></i></a></li>
-		<li><a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw" target="blank"><i
-					class="fab fa-youtube"></i></a></li>
-		<li><a href="https://www.linkedin.com/in/ameen-mohiyuddin-413bab197/" target="blank"><i
-					class="fab fa-linkedin"></i></a></li>
-		<li><a href="https://ameenmohiyuddin.netlify.app/" target="blank"><i 
-			class="fas fa-circle-user"></i></a></li>
-	</ul>
-
-	<video src="img/background.mp4" loop autoplay muted></video>
-
-
-	<script type="text/javascript" src="js/main.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
 </html>
