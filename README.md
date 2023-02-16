@@ -11,9 +11,7 @@
 					<br>
 					<br>
 					<p>
-						<a href="https://github.com/Aminizle/NASA" target="_blank">
-							<img src="https://img.shields.io/badge/Repo-lightgrey?style=for-the-badge&logo=github"/>
-						</a>  
+						
 						<a href="https://nasa-pictures-of-the-day.netlify.app/" target="_blank">
 							<img src="https://img.shields.io/badge/-website-green?style=for-the-badge&color=0CA4BD"/>
 						</a>	
@@ -42,7 +40,7 @@
 
 <h2>Demo</h2>
 
-<p>You can see a live demo of this project at <a href="https://marvel-cinematic-universe.netlify.app/">https://marvel-cinematic-universe.netlify.app/</a>.</p>
+<p>You can see a live demo of this project at <a href="https://nasa-pictures-of-the-day.netlify.app/">https://nasa-pictures-of-the-day.netlify.app/</a>.</p>
 
 <h2>Installation</h2>
 
@@ -54,8 +52,8 @@
 
 <h2>Credits</h2>
 
-<p>This project was built using the Marvel API. Thanks to Marvel for providing the data used in this project.</p>
-https://github.com/AugustoMarcelo/mcuapi
+<p>This project was built using the NASA's API. Thanks to NASA for providing the data used in this project.</p>
+
 
 <h2>License</h2>
 
