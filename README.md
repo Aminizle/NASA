@@ -21,12 +21,46 @@
 					 <p><strong>JavaScript, CSS3, HTML5</strong> - Web application that allows you to explore Nasa's picture of the day archive!</p>
 				</div>
         
-   <p>Tech Stack:</p>
-      <ul>
-        <li>HTML 5</li>
-        <li>CSS 3</li>
-        <li>JavaScript</li>
-      </ul>
+   <h2>Tech Stack</h2>
+
+<p>This project was built using the following technologies:</p>
+
+<ul>
+  <li>HTML 5</li>
+  <li>CSS 3</li>
+  <li>Bootstrap</li>
+  <li>JavaScript</li>
+</ul>
+
+<h2>Features</h2>
+
+<ul>
+  <li>Embark on a cosmic journey and explore the complete archive of NASA's breathtaking Picture of the Day collection.</li>
+  <li>Experience the wonder of the cosmos with captivating descriptions and insights for each Picture of the Day.</li>
+  <li>Join a community of fellow explorers and share your interstellar adventures on social media.</li>
+</ul> 
+
+<h2>Demo</h2>
+
+<p>You can see a live demo of this project at <a href="https://marvel-cinematic-universe.netlify.app/">https://marvel-cinematic-universe.netlify.app/</a>.</p>
+
+<h2>Installation</h2>
+
+<ol>
+  <li>Clone this repository to your local machine: <code>git clone https://github.com/your-username/marvel-cinematic-universe-explorer.git</code></li>
+  <li>Navigate to the project directory: <code>cd marvel-cinematic-universe-explorer</code></li>
+  <li>Open the <code>index.html</code> file in your web browser to view the project.</li>
+</ol>
+
+<h2>Credits</h2>
+
+<p>This project was built using the Marvel API. Thanks to Marvel for providing the data used in this project.</p>
+https://github.com/AugustoMarcelo/mcuapi
+
+<h2>License</h2>
+
+<p>This project is licensed under the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+
       
 &nbsp&nbsp&nbsp
 
