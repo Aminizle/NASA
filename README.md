@@ -15,7 +15,7 @@
 <a href="https://nasa-pictures-of-the-day.netlify.app/" target="_blank">
 <img src="https://img.shields.io/badge/-website-green?style=for-the-badge&color=0CA4BD"/>
 </p>
-<p><strong>JavaScript, CSS3, HTML5</strong> - Web application that allows you to explore Nasa's picture of the day archive!</p>
+<p><strong>JavaScript, CSS3, Bootstrap, HTML5</strong> - Web application that allows you to explore Nasa's picture of the day archive!</p>
 				</div>
         
    <h2>Tech Stack</h2>
