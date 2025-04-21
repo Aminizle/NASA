@@ -1,31 +1,26 @@
 //The user will enter a date. Use that date to get the NASA picture of the day from that date! https://api.nasa.gov/
 
-document.querySelector('#searchButton').addEventListener('click', getImage)
+document.querySelector("#searchButton").addEventListener("click", getImage);
 window.onload = getImage;
 
-let selectedDate = new Date().toISOString().split('T')[0]
-document.querySelector('#input').value = selectedDate
+const key = "JU7IDnJ2gDoCgPj1aE6mcfSmqtgIkDwcyKXp9eTD";
 
+// let selectedDate = new Date().toISOString().split("T")[0];
+// document.querySelector("#input").value = selectedDate;
 
 function getImage() {
+  let date = document.querySelector("#input").value;
 
-// let date = document.querySelector('#input').value
+  fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}&date=${date}`)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
 
-fetch(`/.netlify/functions/fetch-nasa?date=${selectedDate}`)
-    .then( res => res.json())
-    .then( data => {
-        console.log(data)
-       
-        document.querySelector('.name').innerText = data.title              
-        document.querySelector('.description').innerText = data.explanation
-        document.querySelector('img').src = data.hdurl
-
+      document.querySelector(".name").innerText = data.title;
+      document.querySelector(".description").innerText = data.explanation;
+      document.querySelector("img").src = data.hdurl;
     })
-    .catch(err => {
-        console.log(`error ${err}`)
-        
+    .catch((err) => {
+      console.log(`error ${err}`);
     });
 }
-
-
-
