@@ -1,12 +1,14 @@
-//The user will enter a date. Use that date to get the NASA picture of the day from that date! https://api.nasa.gov/
-
 document.querySelector("#searchButton").addEventListener("click", getImage);
-window.onload = getImage;
+window.onload = initializeAPOD; 
 
 const key = "JU7IDnJ2gDoCgPj1aE6mcfSmqtgIkDwcyKXp9eTD";
 
-// let selectedDate = new Date().toISOString().split("T")[0];
-// document.querySelector("#input").value = selectedDate;
+// Initialize with today's date
+function initializeAPOD() {
+  const today = new Date().toISOString().split("T")[0]; // Format: YYYY-MM-DD
+  document.querySelector("#input").value = today; // Set default date
+  getImage(); // Fetch today's APOD
+}
 
 function getImage() {
   let date = document.querySelector("#input").value;
@@ -15,12 +17,12 @@ function getImage() {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
-
       document.querySelector(".name").innerText = data.title;
       document.querySelector(".description").innerText = data.explanation;
-      document.querySelector("img").src = data.hdurl;
+      document.querySelector("img").src = data.hdurl || data.url; // Fallback to `url` if `hdurl` is missing
     })
     .catch((err) => {
       console.log(`error ${err}`);
+      document.querySelector(".description").innerText = "Failed to fetch APOD. Try another date.";
     });
 }
