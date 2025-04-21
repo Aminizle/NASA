@@ -3,16 +3,15 @@
 document.querySelector('#searchButton').addEventListener('click', getImage)
 window.onload = getImage;
 
-
-
-const key = "JU7IDnJ2gDoCgPj1aE6mcfSmqtgIkDwcyKXp9eTD"
+let selectedDate = new Date().toISOString().split('T')[0]
+document.querySelector('#input').value = selectedDate
 
 
 function getImage() {
 
-let date = document.querySelector('#input').value
+// let date = document.querySelector('#input').value
 
-fetch(`https://api.nasa.gov/planetary/apod?api_key=${key}&date=${date}`)
+fetch(`/.netlify/functions/fetch-nasa?date=${selectedDate}`)
     .then( res => res.json())
     .then( data => {
         console.log(data)
