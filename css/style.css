@@ -31,6 +31,12 @@ body {
   margin-bottom: 50px;
 }
 
+.subHeading {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+}
+
 img { 
   margin-top: 35px;
   height: 400px;  
@@ -55,8 +61,34 @@ input{
   padding: 2px;
 }
 
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 10px; /* Adds space between all flex children */
+}
+.searchContainer input {
+  width: 150px;
+  height: 35px;
+  padding: 4px;
+  font-size: 1em;
+  font-weight: 800;
+  line-height: 1em; 
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 10px;
+}
+.searchContainer input:focus {
+  outline: none;
+  border: 2px solid #fff;
+  background-color: var(--accent-color);
+}
 
 button {
+  height: 35px;
   padding: 4px;
   font-size: 1em;
   font-weight: 800;
@@ -161,7 +193,3 @@ ul li {
   color: var(--accent-color);
   
 }
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/

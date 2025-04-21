@@ -23,16 +23,16 @@
   <body>
     <section class="showcase">
       <div class="main">
-        <h1>NASA's picture of the day</h1>
+        <h1>NASA's picture of the day</h1></div>
+      <div class="subHeading">
         <h2 class="selectDate">
           Select a date to explore NASA's picture of the day archive.
         </h2>
-
+      </div>
+      <div class="searchContainer">
         <input
           type="date"
-          name=""
-          value="1995-06-16"
-          placeholder="YYYY-MM-DD"
+          name=""          
           min="1995-06-16"
           id="input"
           onkeypress="getImage()"
@@ -40,7 +40,7 @@
         <button type="button" name="searchButton" id="searchButton">
           Search Date
         </button>
-       
+      </div>
         <div class="nasa">
           <img src="" alt="" />
           <ul class="textUL">
